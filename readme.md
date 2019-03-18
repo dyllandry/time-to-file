@@ -14,6 +14,7 @@ I'm Dylan Landry, I made this! Follow my [Twitch channel](https://www.twitch.tv/
     - *You can use `ls` (list on MacOS) or `dir` (directory on Windows) to view the current directory's contents.*
 1. Once in this directory, enter `npm start` to begin this program.
     - *Npm stands for node package manager. It comes with Node and let's you run node programs.*
+    - *You must leave this program running in your terminal or command prompt for the txt file to continually update.*
 
 ## Issues
 If you run into an issue, submit information about it via [this GitHub's issue form](https://github.com/dyllandry/time-to-file/issues/new).
