@@ -1,17 +1,23 @@
 const fs = require('fs')
 const path = require('path')
 
+// write time on startup
 writeTime()
 
 // figure out when to next write to file
 const now = new Date()
 const currentSeconds = now.getSeconds()
 const secondsUntilNextMinute = 60 - currentSeconds
+
+// schedule next write when minute next changes
 setTimeout(() => {
   writeTime()
+
+  // set an interval to write from then on once every minute
   setInterval(() => {
     writeTime()
   }, 60 * 1000)
+
 }, secondsUntilNextMinute * 1000)
 
 function writeTime () {
